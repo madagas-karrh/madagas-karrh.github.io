@@ -1,0 +1,42 @@
+.centerImg {
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16px;
+}
+
+p
+{
+  font-family: "Segoe UI";
+  font-size: 16px;
+}
+
+.homeimg1
+{
+  max-width:400px;
+  max-height:600px;
+  float: left;
+  padding: 10px;
+  text-align:center;
+}
+
+.homeimg2
+{
+  max-width:400px;
+  max-height:600px;
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  height: 700px;
+}
