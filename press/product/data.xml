@@ -1,0 +1,310 @@
+<!-- # Product — presskit.html -->
+
+<!--
+  **This is your product or game page**. It should focus on _ONLY_ one product. This is not a replacement for your product's website, but a quick way for the press to know it faster.
+
+  [Check the actual rendered page for the code you'll find below.](http://pixelnest.io/presskit.html/example/product/)
+
+  If you don't have a `data.xml` yet, the easiest way to start is to run this command in your presskit folder:
+
+  ```bash
+  presskit new -t product
+  ```
+
+  Then, open the generated `data.xml` file and fill the blanks while following this guide.
+
+  <hr>
+
+  For your company' `data.xml`, [refer to the company documentation](../company/).
+
+  <hr>
+-->
+
+<!-- Don't forget to set your XML header correctly. -->
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  Use a `<product>` or `<game>` tag.
+-->
+<product>
+  <!-- ## General Information -->
+
+  <!-- Begin with your product name, website, and miscellaneous information. -->
+  <title>Birth</title>
+  <website>https://www.wetheart.games/</website>
+
+  <!-- You can also add an URL to a request page for this product. A button will be displayed on the page. -->
+
+
+  <!--
+    If you have one or many publishers for this product, you can add them here.
+
+    The `<based-in>` and `<website>` tags are optional.
+  -->
+  <partners>
+    <partner>
+      <type>Funded By</type>
+      <title>WINGS Interactive</title>
+      <website>https://wingsfund.me/</website>
+    </partner>
+    </partners>
+
+  <!-- Add as many dates, platforms and prices as needed. -->
+  <release-dates>
+    <release-date>17 Feb, 2023</release-date>
+  </release-dates>
+
+  <!--
+    Put all the platforms your product is available on.
+
+    `<link>` tag is optional.
+  -->
+  <platforms>
+    <platform>
+      <name>Steam</name>
+      <link>https://store.steampowered.com/app/1889040/</link>
+    </platform>
+
+  </platforms>
+
+  <!-- Show the price of your product. Try to be exhaustive, it will be helpful for a reviewer. -->
+  <prices>
+    <price>
+      <currency>USD</currency>
+      <value>10.99</value>
+    </price>
+
+  </prices>
+
+  <!-- ## Relations -->
+
+  <!--
+    You can specify relations between products using the `<relations>` tag.
+
+
+    Then, on this page product, you will see a new line in the factsheet:
+
+    ```
+    DLC:
+    My Super Game: Ultimate Edition
+    ```
+
+    Of course, the `Product Name` value is clickable.
+
+    In the related product page, a new value will also be added:
+
+    ```
+    DLC of:
+    My Super Game
+    ```
+
+    _Obviously, since the name we provide in the example is not a real product (ie., the product data.xml does not exist), this tag will be ignored for this page._
+
+    You can have as many relations as you want. You can use it to show DLCs, expansions, sequels, prequels, etc.
+
+    **Warning**: you need to rebuild the presskit to see the changes.
+  -->
+
+
+  <!-- ## Description & History -->
+
+  <!-- Describe your product here. Be brief. -->
+  <description>
+    Birth is an adventure puzzle game about constructing a creature from spare bones and organs found around the city in order to quell your loneliness. 
+  </description>
+
+  <!--
+    Tell the story of your product with the `<history>` tag.
+
+    You have two possibilities here.
+
+    - Use an `<history>` block like in the example.
+    - Or use an `<histories>` block if you have tons of things to say.
+
+    You can't have both.
+
+    You can see an example of the `<histories>` block in the company page.
+  -->
+  <history>
+    Birth is developed solely by Madison Karrh. She has spent most of her twenties living alone in tiny studio apartments. Birth is her exploration of day-to-day loneliness.
+    Every piece of Birth is hand-drawn and doused with love, feeling and a bit of grief. Enjoy.
+  </history>
+
+  <!-- ## Features -->
+
+  <!--
+    Show the most important features of your product.
+
+    Focus on what is really important and is a key aspect of it.
+  -->
+  <features>
+    <feature>
+      Collect bones and organs in hand-drawn museums, coffee shops, alleys, flower shops, libraries, markets, bakeries and more.    </feature>
+    <feature>
+      Solve physics-based puzzles and interact with unique, interesting creatures.
+    </feature>
+    <feature>
+      Find and spend hidden tokens to discover secrets.
+    </feature>
+  </features>
+
+  <!-- ## Trailers -->
+
+  <!--
+    Add your videos. Trailer, teaser, snippets? Let's roll!
+
+    You can use YouTube and/or Vimeo. Only one is needed, and only one is recommended.
+
+    Don't put the full link: just the ID is necessary.
+
+    If you want to provide a link to download the video, add this tag in `<trailer>`:
+
+    ```
+    <download>https://example.com/video.mp4</download>
+    ```
+  -->
+  <trailers>
+    <trailer>
+      <name>Release Trailer</name>
+      <youtube>https://www.youtube.com/watch?v=ruLpEG2Dv7s&#038;t=1s</youtube>
+    </trailer>
+    <trailer>
+      <name>Day of the Devs Feature</name>
+      <youtube>https://www.youtube.com/watch?v=wuZlnzUN_o8</youtube>
+    </trailer>
+
+  </trailers>
+
+  <!-- ## Widgets -->
+
+  <!--
+    Add your widgets to your product here.
+
+    If the product is not a game or an app, you won't probably need that.
+
+    We only need the ID of the product on the store.
+
+    This section is **optional**, and you can use as many widgets (or none) as you want.
+
+    **Warning: widgets import many scripts and assets. This may have a penalty on your page size and responsiveness.**
+  -->
+  <widgets>
+    <steam>1889040</steam>
+  </widgets>
+
+  <!-- ## Awards, quotes & links -->
+
+  <!--
+    You got awards for this product? Great! Put them here.
+
+    **Optional.**
+  -->
+  <awards>
+    <award>
+      <description>Day of the Devs Official Selection</description>
+      <info>Summer Games Fest, Edition 2022</info>
+    </award>
+  </awards>
+
+  <!--
+    Quotes are used to show the appreciation of your users.
+
+    Show something important, something nice, or something funny, for example.
+
+    **Optional.**
+  -->
+  <quotes>
+    <quote>
+      <description>The distinctive, creepy-yet-beautiful art style really sets it apart from just about everything in gaming today.</description>
+      <name>Ian Walker</name>
+      <website>Kotaku</website>
+      <link>https://www.kotaku.com.au/2022/06/once-again-a-quiet-indie-games-show-upstages-a-bombastic-aaa-event/</link>
+    </quote>
+    <quote>
+      <description>Birth is like if plague doctors and 2004 web series Salad Fingers were beautiful instead of deeply upsetting.</description>
+      <name>Rebekah Valentine</name>
+      <website>IGN</website>
+      <link>https://www.ign.com/articles/the-best-little-games-i-played-at-gamescom-2022</link>
+    </quote>
+    <quote>
+      <description>It could qualify for a Wholesome Direct, were it not for all the animal corpses.</description>
+      <name>Chris Schilling</name>
+      <website>EDGE Magazine</website>
+      <link>https://twitter.com/edgeonline/status/1559824147898925056?s=20&#038;t=CkCFdeZLJFHtmSetbTVFww</link>
+    </quote>
+  </quotes>
+
+  <!--
+    Need to link to a resource? A small product? An RSS feed? An OST?
+
+    A press release?
+
+    Put those here, in the `<additionals>` tag.
+
+    **Optional.**
+  -->
+
+  <!-- ## About -->
+
+  <!--
+    An "About Your Company" section is automatically generated from the content of the company page.
+
+    This <abouts> tag is completely **optional**. If you don't want this section, just delete it. But sometimes, you want to add a description for a partner.
+
+    This is this the place to do it.
+
+    For example, if you have a publisher, you can speak a bit more about it here.
+
+    Most of the time, you should link that to the <partner> tag above, if you want to explain a partner a bit more. But you could use this section for other purpose.
+
+    The <link> tag is optional.
+  -->
+  <abouts>
+
+    <about>
+      <title>WINGS Interactive</title>
+      <description>WINGS invests in indie games by teams in which women and marginalized gender developers hold key positions.</description>
+      <link>https://wingsfund.me/</link>
+    </about>
+  </abouts>
+
+  <!-- ## Team & Contacts -->
+
+  <!--
+    This is for the product team.
+
+    Add yourself, of course, but also your collaborators, freelancers and/or partners for example.
+
+    The `<role>` tag can be anything you want. But we recommend to, at least, put the company name for the founders/employees. This will distinguish this person from the external collaborators.
+
+    The `<website>` tag is optional.
+  -->
+  <credits>
+    <credit>
+      <person>Madison Karrh</person>
+      <role>Solo Developer</role>
+    </credit>
+    <credit>
+      <person>WINGS Interactive</person>
+      <role>Funding</role>
+    </credit>
+ 
+  </credits>
+
+  <!--
+    Add more contact information.
+
+    Add links to your product social accounts, as well as mail specific to this product. And the website.
+
+    For each item, pick one between a `<link>` and `<mail>` tag.
+  -->
+  <contacts>
+    <contact>
+      <name>Madison Karrh</name>
+      <mail>madison@wetheart.games</mail>
+    </contact>
+
+  </contacts>
+
+<!-- All done! 🍾 -->
+</product>
